@@ -35,5 +35,21 @@ public class AppTest
         assertEquals(list, result);    
     }
 
+    //Test Case 3: Given that I have an empty list, when I add additional books to the list,
+    // I expect the numberRead to return the total number of books in my list.
+
+    @Test
+    public void AddingBook(){
+        int list=2;
+        Book book1=new Book("The Hobbit by J.R.R", "Tolkein", 320, 1937);
+        Book book2=new Book("Alices Adventures in Wonderland", "Lewis Carroll", 544 , 1865);
+        ReadList read=new ReadList("January 1, 2020",5);
+        read.addBook(read,book1);
+        read.addBook(read1,book2);   
+        int result=read.numberRead();
+        assertEquals(list, result);  
+    }
+
+
 
 }
