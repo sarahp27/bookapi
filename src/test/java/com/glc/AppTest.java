@@ -40,14 +40,19 @@ public class AppTest
 
     @Test
     public void AddingBook(){
+        //setup
         int list=2;
+        //execute
+        //adding book1 
         Book book1=new Book("The Hobbit by J.R.R", "Tolkein", 320, 1937);
-        Book book2=new Book("Alices Adventures in Wonderland", "Lewis Carroll", 544 , 1865);
         ReadList read=new ReadList("January 1, 2020",5);
-        ReadList read1=new ReadList("May 22, 1992",5);
         read.addBook(read,book1);
+        //adding book 2
+        Book book2=new Book("Alices Adventures in Wonderland", "Lewis Carroll", 544 , 1865);     
+        ReadList read1=new ReadList("May 22, 1992",5); 
         read.addBook(read1,book2);   
         int result=read.numberRead();
+        //assert
         assertEquals(list, result);  
     }
     
