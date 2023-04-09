@@ -28,7 +28,7 @@ public class AppTest
     public void FirstBook()
     {
         int list=1;
-        Book book=new Book("The Hobbit by J.R.R", "Tolkein", 320, 1937);
+        Book book1=new Book("The Hobbit by J.R.R", "Tolkein", 320, 1937);
         ReadList read=new ReadList("May 22, 1992",5);
         read.addBook(read,book1);   
         int result=read.numberRead();
