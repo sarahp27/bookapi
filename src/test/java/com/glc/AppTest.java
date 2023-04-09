@@ -1,20 +1,22 @@
 package com.glc;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-/**
- * Unit test for simple App.
- */
+
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
     @Test
-    public void shouldAnswerWithTrue()
+    public void EmptyList()
     {
-        assertTrue( true );
+        //setup
+        int list=0;
+        //execute
+        ReadList read= new ReadList("January 1, 2020,",5);
+        int result=read.getBook();
+        //assert
+        assertEquals(list, result);
     }
 }
