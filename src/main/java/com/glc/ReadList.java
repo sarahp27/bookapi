@@ -8,6 +8,11 @@ public class ReadList {
     List<ReadList>read;
     String dateRead;
     int rating;
+
+    public ReadList(){
+        read=new ArrayList<>();
+    }
+
     public ReadList(String dateRead,int rating){
         read=new ArrayList<>();
         this.dateRead=dateRead;
