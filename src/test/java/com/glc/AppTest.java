@@ -58,6 +58,23 @@ public class AppTest
         //assert
         assertEquals(list, result);  
     }
+
+    // Test Case 4: Given that I have a book in my list, when I call removeBook("<title>") with 
+    //"title" representing the title of my book that I want to delete, 
+    //then when I call getBooks() the book I deleted should no longer be there.
+
+    @Test
+    public void RemoveBook(){
+        int list=0;
+        Book book1=new Book("The Hobbit by J.R.R", "Tolkein", 320, 1937);
+        ReadList read=new ReadList("January 1, 2020",5);
+        read.addBook(read,book);
+        read.DeleteBook("The Hobbit by J.R.R");
+        int result=read.getBook();
+        assertEquals(list, result);   
+    }
+
+
     
 
 
