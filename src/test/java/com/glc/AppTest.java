@@ -100,8 +100,8 @@ public class AppTest
         ReadList read=new ReadList("May 22, 1992",4);
         Book book2=new Book("The Hobbit by J.R.R", "Tolkein", 320, 1937);
         ReadList read2=new ReadList("May 22, 1992",5);
-        read.addBook(read,book);
-        read.addBook(read2,book);
+        read.addBook(read,book1);
+        read.addBook(read2,book2);
         int result = read.getBookByRating(5);
         assertEquals(list, result);
     }
