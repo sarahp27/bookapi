@@ -77,7 +77,19 @@ public class AppTest
         assertEquals(list, result);   
     }
 
+    @Test
+    public void ReturnBooks(){
+        int list=1;
+        Book book1=new Book("The Hobbit by J.R.R", "Tolkein", 320, 1937);
+        ReadList read=new ReadList("May 22, 1992",5);
+        read.addBook(read,book1);
+        int result = read();
+        assertEquals(list, result);
+    }
+
     
+
+
 
 
     
