@@ -68,7 +68,7 @@ public class AppTest
         int list=0;
         Book book1=new Book("The Hobbit by J.R.R", "Tolkein", 320, 1937);
         ReadList read=new ReadList("January 1, 2020",5);
-        read.addBook(read,book);
+        read.addBook(read,book1);
         read.DeleteBook("The Hobbit by J.R.R");
         int result=read.getBook();
         assertEquals(list, result);   
