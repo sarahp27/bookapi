@@ -93,9 +93,14 @@ public class AppTest
         assertEquals(list, result);
     }
 
+    //Test Case 6: Given when I call getBooksByRating(), 
+    //I should return a list of books that all have that rating.
+
     @Test
     public void BookByRating(){
+        //Setup
         int list=2;
+        //Execute
         Book book1=new Book("The Hobbit by J.R.R", "Tolkein", 320, 1937);
         ReadList read=new ReadList("May 22, 1992",4);
         Book book2=new Book("The Hobbit by J.R.R", "Tolkein", 320, 1937);
@@ -103,6 +108,7 @@ public class AppTest
         read.addBook(read,book1);
         read.addBook(read2,book2);
         int result = read.getBookByRating(5);
+        //Assert
         assertEquals(list, result);
     }
 
