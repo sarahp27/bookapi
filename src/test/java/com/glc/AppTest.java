@@ -77,13 +77,19 @@ public class AppTest
         assertEquals(list, result);   
     }
 
+    // Test Case 5: Given that I have an empty list, 
+    // when I add a new book I expect getBooks() to return a list of books that includes the book I added.
+
     @Test
     public void ReturnBooks(){
+        //setup
         int list=1;
+        //Execute
         Book book1=new Book("The Hobbit by J.R.R", "Tolkein", 320, 1937);
         ReadList read=new ReadList("May 22, 1992",5);
         read.addBook(read,book1);
         int result = read.getBook();
+        //Assert
         assertEquals(list, result);
     }
 
