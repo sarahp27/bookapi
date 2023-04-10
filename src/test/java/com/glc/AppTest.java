@@ -65,14 +65,19 @@ public class AppTest
 
     @Test
     public void RemoveBook(){
+        //Setup
         int list=0;
+        //Execute
         Book book1=new Book("The Hobbit by J.R.R", "Tolkein", 320, 1937);
         ReadList read=new ReadList("January 1, 2020",5);
         read.addBook(read,book1);
         read.DeleteBook("The Hobbit by J.R.R");
         int result=read.getBook();
+        //Assert
         assertEquals(list, result);   
     }
+
+    
 
 
     
